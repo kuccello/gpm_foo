@@ -1,0 +1,36 @@
+<project>
+  <modelVersion>1.0.0</modelVersion>
+  <groupId>com.somegame.unity</groupId>
+  <artifactId>foo-game</artifactId>
+  <version>1</version>
+
+  <registries>
+  	<registry>
+  		<name>Unity Central Registry</name>
+  		<source>
+  			<remote>https://raw.githubusercontent.com/kuccello/gpmtest/master/google-registry_pom.xml</remote>
+  		</source>
+  	</registry>
+  	<registry>
+  		<name>Company Internal Registry</name>
+  		<source>
+  			<local>/home/kuccello/Development/github/gpmtest/google-registry_pom.xml</local>
+  		</source>
+  	</registry>
+  </registries>
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.google.unity</groupId>
+      <artifactId>firebase-auth</artifactId>
+      <version>1.0.0.0</version>
+      <packaging>unitypackage</packaging>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-project</artifactId>
+      <version>${mavenVersion}</version>
+      <packaging>unitypackage</packaging>
+    </dependency>
+  </dependencies>
+</project>
